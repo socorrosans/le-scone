@@ -1,0 +1,26 @@
+@import "colors";
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(400px, 550px) 1fr;
+  gap: 5px;
+
+  .info {
+    grid-column: 1;
+
+    img {
+      margin-bottom: 60px;
+    }
+  }
+
+  .pic {
+    width: 100%;
+    grid-column: 2;
+
+    img {
+      max-width: 100%;
+      display: block;
+      border: 10px solid $border-primary;
+    }
+  }
+}

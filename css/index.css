@@ -1,0 +1,84 @@
+body, div, span,
+h1, h2, h3, p,
+a, img, sub, sup, ol, ul, li,
+fieldset, form, label, legend,
+article, footer, header,
+menu, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "PT Mono", monospace;
+  background: #edece4;
+}
+
+body > div {
+  padding-block: 80px 100px;
+  border: 10px solid #cbc6b9;
+  border-bottom: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+label, p, li, h1, h2 {
+  color: #2a2426;
+}
+
+label, p, li, h1 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.66em;
+}
+
+h2 {
+  font-family: "Aref Ruqaa", serif;
+  font-size: 24px;
+  line-height: 1.25em;
+}
+
+footer {
+  background: #2a2426;
+}
+
+footer p {
+  color: #edece4;
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(400px, 550px) 1fr;
+  gap: 5px;
+}
+.intro .info {
+  grid-column: 1;
+}
+.intro .info img {
+  margin-bottom: 60px;
+}
+.intro .pic {
+  width: 100%;
+  grid-column: 2;
+}
+.intro .pic img {
+  max-width: 100%;
+  display: block;
+  border: 10px solid #cbc6b9;
+}
+
+/*# sourceMappingURL=index.css.map */

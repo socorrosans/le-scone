@@ -1,0 +1,44 @@
+@import "colors";
+
+body {
+  box-sizing: border-box;
+  font-family: 'PT Mono', monospace;
+  background: $background-body;
+}
+
+body > div {
+  padding-block: 80px 100px;
+  border: 10px solid $border-primary;
+  border-bottom: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+label, p, li, h1, h2 {
+  color: $font-main;
+}
+
+label, p, li, h1 {
+  font-size: 18px;
+}
+
+p {
+  line-height: 1.66em;
+}
+
+h2 {
+  font-family: 'Aref Ruqaa', serif;
+  font-size: 24px;
+  line-height: 1.25em;
+}
+
+footer {
+  background: $font-main;
+}
+
+footer p {
+  color: $background-body;
+}
