@@ -1,13 +1,18 @@
 @import "colors";
+@import "mixins";
+
+* {
+  box-sizing: border-box;
+}
 
 body {
-  box-sizing: border-box;
   font-family: 'PT Mono', monospace;
   background: $background-body;
 }
 
 body > div {
-  padding-block: 80px 100px;
+  padding-inline: 10px;
+  padding-block: 60px 100px;
   border: 10px solid $border-primary;
   border-bottom: none;
 }
@@ -15,6 +20,14 @@ body > div {
 .container {
   max-width: 1200px;
   margin-inline: auto;
+
+  @include screen(1200px){
+    max-width: 800px;
+  }
+
+  @include screen(800px){
+    max-width: 500px;
+  }
 }
 
 label, p, li, h1, h2 {

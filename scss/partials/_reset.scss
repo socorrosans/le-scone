@@ -1,9 +1,7 @@
 body, div, span,
 h1, h2, h3, p,
-a, img, sub, sup, ol, ul, li,
-fieldset, form, label, legend,
-article, footer, header,
-menu, nav, section {
+a, img, sub, sup, ul, li, form, label,
+footer, section {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -12,6 +10,7 @@ menu, nav, section {
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ul {
 	list-style: none;
 }
