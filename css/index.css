@@ -24,7 +24,7 @@ body {
   background: #edece4;
 }
 
-body > div {
+main {
   padding-inline: 10px;
   padding-block: 60px 100px;
   border: 10px solid #cbc6b9;
@@ -58,9 +58,14 @@ p {
   line-height: 1.66em;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 h2 {
   font-family: "Aref Ruqaa", serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.25em;
 }
 
@@ -158,6 +163,87 @@ footer p {
 @media (max-width: 800px) {
   .info p:nth-of-type(3):after {
     display: none;
+  }
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-block: 120px;
+  gap: 120px;
+}
+@media (max-width: 1200px) {
+  .menu {
+    gap: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .menu {
+    grid-template-columns: 1fr;
+    padding-block: 60px;
+    gap: 50px;
+  }
+}
+.menu h1 {
+  display: flex;
+  align-items: center;
+  align-self: start;
+}
+.menu h1:after {
+  display: inline-block;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background: #2a2426;
+  margin-left: 50px;
+}
+@media (max-width: 1200px) {
+  .menu h1:after {
+    width: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .menu h1:after {
+    width: 65%;
+  }
+}
+.menu h2 {
+  margin-bottom: 15px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 200px;
+}
+@media (max-width: 1200px) {
+  .items {
+    gap: 50px;
+  }
+}
+.items li {
+  line-height: 1.9;
+}
+.items li span {
+  color: #988c77;
+  font-family: "Aref Ruqaa", serif;
+  margin-left: -60px;
+}
+@media (max-width: 800px) {
+  .items li span {
+    margin-left: 0px;
+  }
+}
+.items img {
+  border-radius: 50%;
+  border: 10px solid #cbc6b9;
+}
+@media (max-width: 800px) {
+  .items img {
+    align-self: flex-start;
+    margin-top: -50px;
+    max-width: 120px;
   }
 }
 

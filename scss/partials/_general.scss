@@ -10,7 +10,7 @@ body {
   background: $background-body;
 }
 
-body > div {
+main {
   padding-inline: 10px;
   padding-block: 60px 100px;
   border: 10px solid $border-primary;
@@ -42,9 +42,14 @@ p {
   line-height: 1.66em;
 }
 
+h1 {
+  font-weight: 400;
+}
+
 h2 {
   font-family: 'Aref Ruqaa', serif;
   font-size: 24px;
+  font-weight: 400;
   line-height: 1.25em;
 }
 
