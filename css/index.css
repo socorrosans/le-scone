@@ -364,4 +364,22 @@ footer p {
   }
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+}
+.footer img {
+  align-self: center;
+}
+.footer p {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */

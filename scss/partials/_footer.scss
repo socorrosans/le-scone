@@ -1,0 +1,20 @@
+@import "mixins";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 10px;
+
+  img {
+    align-self: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  @include screen(800px){
+    flex-direction: column;
+    gap: 10px;
+  }
+}
