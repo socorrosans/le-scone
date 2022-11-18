@@ -3,3 +3,25 @@
     @content;
   }
 }
+
+@mixin menu-form{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-block: 120px;
+  gap: 120px;
+}
+
+@mixin title-menu-form {
+  display: flex;
+  align-items: center;
+  align-self: start;
+}
+
+@mixin detail-title {
+  display: inline-block;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background: $font-main;
+  margin-left: 50px;
+}

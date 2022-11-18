@@ -1,0 +1,111 @@
+@import "colors";
+@import "mixins";
+
+.contact {
+  @include menu-form;
+  padding-bottom: 0;
+
+  @include screen(1200px){
+    gap: 80px;
+    .container {
+      max-width: 760px;
+    }
+  }
+
+  @include screen(800px){
+    grid-template-columns: 1fr;
+    padding-block: 60px;
+    gap: 20px;
+  }
+  
+  h1 {
+    @include title-menu-form;
+
+    &:after {
+      @include detail-title;
+      @include screen(1200px){
+        width: 150px;
+      }
+
+      @include screen(800px){
+        width: 65%;
+      }
+    }
+  }
+
+  form {
+    input {
+      height: 40px;
+    }
+
+    input, textarea {
+      width: 100%;
+      line-height: 1.66667em;
+      background-color: inherit;
+      padding-block: 10px;
+      margin-block: 5px 16px;
+      border: 2px solid $border-secondary;
+
+      &:focus, &:hover {
+        outline: none;
+        border: 2px solid $border-primary;
+      }
+    }
+
+    button {
+      align-self: flex-start;
+      color: $border-secondary;
+      font-family: "PT Mono",monospace;
+      font-size: 20px;
+      line-height: 1.66667em;
+      background-color: inherit;
+      border: 2px solid $border-secondary;
+      padding: 3px 60px; 
+      margin-bottom: 10px;
+      box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+      transition: .3s;
+      cursor: pointer;
+  
+      &:hover {
+        color: $border-primary;
+        box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+      }
+    }
+  }
+
+  .map {
+    grid-column: 2;
+    @include screen(800px){
+      grid-column: 1;
+    }
+  }
+
+  .map img {
+    width: 100%;
+    border: 10px solid $border-primary;
+  }
+}
+
+.info {
+  color: $border-secondary;
+  font-size: 18px;
+
+  span {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    @include screen(800px){
+      text-align: left;
+    }
+  }
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  @include screen(800px){
+    flex-direction: column;
+  }
+}

@@ -247,4 +247,121 @@ footer p {
   }
 }
 
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-block: 120px;
+  gap: 120px;
+  padding-bottom: 0;
+}
+@media (max-width: 1200px) {
+  .contact {
+    gap: 80px;
+  }
+  .contact .container {
+    max-width: 760px;
+  }
+}
+@media (max-width: 800px) {
+  .contact {
+    grid-template-columns: 1fr;
+    padding-block: 60px;
+    gap: 20px;
+  }
+}
+.contact h1 {
+  display: flex;
+  align-items: center;
+  align-self: start;
+}
+.contact h1:after {
+  display: inline-block;
+  content: "";
+  width: 300px;
+  height: 2px;
+  background: #2a2426;
+  margin-left: 50px;
+}
+@media (max-width: 1200px) {
+  .contact h1:after {
+    width: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .contact h1:after {
+    width: 65%;
+  }
+}
+.contact form input {
+  height: 40px;
+}
+.contact form input, .contact form textarea {
+  width: 100%;
+  line-height: 1.66667em;
+  background-color: inherit;
+  padding-block: 10px;
+  margin-block: 5px 16px;
+  border: 2px solid #988c77;
+}
+.contact form input:focus, .contact form input:hover, .contact form textarea:focus, .contact form textarea:hover {
+  outline: none;
+  border: 2px solid #cbc6b9;
+}
+.contact form button {
+  align-self: flex-start;
+  color: #988c77;
+  font-family: "PT Mono", monospace;
+  font-size: 20px;
+  line-height: 1.66667em;
+  background-color: inherit;
+  border: 2px solid #988c77;
+  padding: 3px 60px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 0 -2px #cbc6b9, 5px 5px 0 0 #988c77;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.contact form button:hover {
+  color: #cbc6b9;
+  box-shadow: 3px 3px 0 -2px #cbc6b9, 3px 3px 0 0 #988c77;
+}
+.contact .map {
+  grid-column: 2;
+}
+@media (max-width: 800px) {
+  .contact .map {
+    grid-column: 1;
+  }
+}
+.contact .map img {
+  width: 100%;
+  border: 10px solid #cbc6b9;
+}
+
+.info {
+  color: #988c77;
+  font-size: 18px;
+}
+.info span {
+  display: block;
+  text-align: right;
+  margin-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .info span {
+    text-align: left;
+  }
+}
+
+.footer-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media (max-width: 800px) {
+  .footer-form {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
